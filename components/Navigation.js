@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import {
+  Avatar,
   Box,
   Flex,
   Text,
@@ -15,6 +16,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
@@ -95,6 +97,12 @@ export default function WithSubnavigation() {
                 Write Posts!
               </Text>
             </Button>
+            <Avatar 
+                size="md"
+                name={username}
+                src={user.photoURL}
+              />
+
           </Stack>
 
         }
